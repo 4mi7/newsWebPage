@@ -32,20 +32,23 @@
 
     <main>
 
-        <div class="cards-container container flex">
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://dummyimage.com/400x200" alt="News image" id="news-img">
-                </div>
-                <div class="card-content">
-                    <h3>This is a title</h3>
-                    <h6>End gadget 12-01-2025</h6>
-                    <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci consectetur. Facilis qui exercitationem itaque eum minima perspiciatis odit quisquam?</p>
-                </div>
-            </div>
+        <div class="cards-container container flex" id="cards-container">
+          
         </div>
     </main>
-
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://dummyimage.com/400x200" alt="News image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is a title</h3>
+                <h6 class="news-source" id="news-source">End gadget 12-01-2025</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci consectetur. Facilis qui exercitationem itaque eum minima perspiciatis odit quisquam?</p>
+            </div>
+        </div>
+        
+    </template>
 
     <script src="script.js"></script>
 </body>
